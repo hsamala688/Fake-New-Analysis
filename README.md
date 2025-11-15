@@ -4,7 +4,7 @@ This is a collaborative project built by two UCLA Statistics and Data Science to
 
 This project aims to build an AI agent capable of analyzing a news article and correctly prediciting if an article is fake news or has legitimate information.
 
-#Features:
+# Features:
 - News Article Classification
 - Text Preprocessing Pipeline
 - Model Training + Evaluation
