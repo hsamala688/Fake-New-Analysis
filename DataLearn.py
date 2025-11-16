@@ -1,3 +1,8 @@
+HEAD
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+import pandas as pd
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -38,6 +43,9 @@ for col in fn_text_columns:
 fake_news_df = fake_news_df[fake_news_df['text'].str.len() > 0]
 
 # Stemming and Lemmatization was intentionally not used as our datasets did not come close to being large enough to require it.
+#print(fake_news_df.head())
+
+#Stemming and Lammatization was not relevant as our datasets did not come close to being large enough to require it.
 
 #Step 1a: Cleaning in the real news Dataset
 
@@ -52,6 +60,7 @@ for col in rn_text_columns:
     )
 
 for col in rn_text_columns:
+for col in fn_text_columns:
     real_news_df[col] = (
         real_news_df[col]
         .apply(word_tokenize)
@@ -61,4 +70,5 @@ for col in rn_text_columns:
 
 real_news_df = real_news_df[real_news_df['text'].str.len() > 0]
 
+#print(real_news_df.head())
 #Step 2: Finding Patterns in Words of the Fake News Dataset
