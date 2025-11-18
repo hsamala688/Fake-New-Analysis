@@ -76,3 +76,4 @@ plt.legend()
 plt.xlim(0, 2000)  # Limit x-axis for better visualization
 plt.grid()
 plt.show()
+
