@@ -96,3 +96,25 @@ Cleaned Text Samples:
 3    Trump campaign adviser George Papadopoulos tol...
 4    President Donald Trump called on the U.S. Post...
 '''
+
+print(fake_news_df['subject'].value_counts())
+print(real_news_df['subject'].value_counts())
+
+
+'''After all this another issue was identified in the cleaning steps of the datasets.
+The problem now was with the subjects column where there classification labels between the two datasets were not aligned
+True.csv subjects included:
+politicsnews    11272
+worldnews       10145
+
+Fake.csv subjects included:
+subject
+news               9050
+politics           6432
+left news          4309
+government news    1498
+us news             783
+middle east         778
+
+As a result of this finding we need to just drop the subject column from the training datasets and then retrain the model
+'''
