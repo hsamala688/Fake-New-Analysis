@@ -33,7 +33,6 @@ real_news_df.drop('text', axis=1, inplace=True)
 real_news_df.rename(columns={'text_clean': 'text'}, inplace=True)
 
 #Columns in each dataset ['title', 'text', 'subject', 'date']
-
 #Step 1: Cleaning the Fake News Dataset
 
 fn_text_columns = ['title', 'text', 'subject']
@@ -81,13 +80,14 @@ for col in rn_text_columns:
         .apply(lambda x: ' '.join(x))
     )
 
+real_news_df = real_news_df[real_news_df['text'].str.len() > 0]
 real_news_df.to_csv("True_Cleaned.csv", index=False)
-print(fake_news_df['subject'].value_counts())
-print(real_news_df['subject'].value_counts())
+'''print(fake_news_df['subject'].value_counts())
+print(real_news_df['subject'].value_counts())'''
 
 #Step 2: Finding Patterns in Words of the Fake News Dataset
 
-'''from sklearn.utils import class_weight
+from sklearn.utils import class_weight
 from transformers import Trainer
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
@@ -138,8 +138,7 @@ training_args = TrainingArguments(
 )
 
 df = pd.concat([fake_news_df, real_news_df], ignore_index=True)
-
-
+df.drop(['subject'], axis=1, inplace=True) #another part of the patch because of the descrepency in subject labels, discussed in Verification_of_Data_Testing.py
 
 df_train_val, df_test = train_test_split(
     df, 
@@ -209,7 +208,7 @@ for key, value in evaluation_results.items():
     print(f"{key}: {value:.4f}")
 
 #Intial Training Results:
-
+'''
 eval_loss: 0.0125
 eval_accuracy: 0.9986
 eval_f1_score: 0.9986
