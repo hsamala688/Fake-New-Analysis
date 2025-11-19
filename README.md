@@ -36,6 +36,11 @@ These results were incredibly concerning because it indicated that the model was
 
 This was then the results of our second NLP model testing:
 
+
+
+## We then realized several things:
+Roberta-base model is a obviously a pretrained model which has been trained on millions of lines of sentences to build general speech recongnition. However, without optimizing it for our needs we essentially overfitting our data with the model. As such we leanred that we ashould be trained on a downstream task to better handle and be able to perform what we want it to do, which is to predict real vs fake news.
+
 # Features:
 - News Article Classification
 - Text Preprocessing Pipeline
