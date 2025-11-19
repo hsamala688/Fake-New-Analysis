@@ -7,7 +7,7 @@ This project aims to build an NLP model capable of analyzing a news article and 
 We created a series of visualizations to track correlation in word count, subjectivity, polarity, punctuation density, and average word length between the fake news articles and real news articles. Additionally, we created feature importance plot to pick which features were most important in detecting what is real or fake news. Furthermore, we created basic word clouds and a density graph comparing word density between the real and fake articles.
 
 Heatmap Correlation:
-![Heatmap Correlation]("correlation_heatmap.png")
+<img width="1600" height="800" alt="Image" src="https://github.com/user-attachments/assets/a267ca9a-2d97-4371-9c65-3f1bb0e69fcd" />
 
 Feature Importance Plot:
 ![Feature Importance Plot]("feature_importance.png")
