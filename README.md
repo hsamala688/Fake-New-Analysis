@@ -18,15 +18,20 @@ We created a series of visualizations to track correlation in word count, subjec
 ## Word Clouds of Fake & Real News
 <img width="1600" height="800" alt="Image" src="https://github.com/user-attachments/assets/a267ca9a-2d97-4371-9c65-3f1bb0e69fcd" />
 
-# Linear Regression Analysis:
-## Distribution of Predicted Values
-<img width="800" height="500" alt="Image" src="https://github.com/user-attachments/assets/a9373b8b-5277-492e-8bed-25098801329f" />
+# Logistic Regression Analysis:
+We created a series of charts based off of logistic regression principles. 
 
-## Actual vs Predicted Score Plot
-<img width="800" height="500" alt="Image" src="https://github.com/user-attachments/assets/cabe0b00-206e-416f-a329-0d639dc7924a" />
+## Confusion Matrix:
+<img width="800" height="600" alt="Image" src="https://github.com/user-attachments/assets/697b9d86-1f7f-4d99-a93e-8c9ffe4069c4" />
 
-## Residuals Plot
-<img width="800" height="500" alt="Image" src="https://github.com/user-attachments/assets/20845838-bf57-48dd-bc2c-509e0b41e0da" />
+## Distribution of Prediction Probabilites:
+<img width="800" height="500" alt="Image" src="https://github.com/user-attachments/assets/33dc33d0-d219-400f-93b6-302b664d8fc8" />
+
+## Probabilities by Label:
+<img width="800" height="500" alt="Image" src="https://github.com/user-attachments/assets/8816537d-a32c-4aeb-83c6-20d5d22a6afd" />
+
+## Prediction Distribution:
+<img width="800" height="500" alt="Image" src="https://github.com/user-attachments/assets/af07708a-1989-42bd-b570-bdcb4bf43567" />
 
 # Natural Language Model Building Process:
 We intially worked by building out using a pretrained roberta-base model which then used and existing kaggle dataset containing real news and fake news from the period of 2015 to 2017. 
