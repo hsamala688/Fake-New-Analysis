@@ -48,7 +48,7 @@ plt.hist(y_pred, bins=30)
 plt.title("Distribution of Linear Regression Predictions")
 plt.xlabel("Predicted Value (0 = Fake, 1 = Real)")
 plt.ylabel("Frequency")
-plt.savefig("Distribution of Predicted Values")
+plt.savefig("Distribution_of_Predicted_Values")
 plt.show()
 
 #The actual vs predicted scatter Plot
@@ -57,7 +57,7 @@ plt.scatter(y_test, y_pred, alpha=0.3)
 plt.title("Actual vs Predicted (Linear Regression)")
 plt.xlabel("Actual Label")
 plt.ylabel("Predicted Value")
-plt.savefig("Actual vs Predicted Scatter Plot")
+plt.savefig("Actual_vs_Predicted_Scatter_Plot")
 plt.show()
 
 #The Residual Plot
@@ -69,7 +69,7 @@ plt.axhline(0, color='black', linestyle='--')
 plt.title("Residual Plot")
 plt.xlabel("Predicted Value")
 plt.ylabel("Residual (Actual - Predicted)")
-plt.savefig("Residuals Plot")
+plt.savefig("Residuals_Plot")
 plt.show()
 
 #Linear Regression done by Kavin Ramesh, Issue with pushing to GitHub
