@@ -21,6 +21,15 @@ We created a series of visualizations to track correlation in word count, subjec
 # Natural Language Model Building Process:
 We intially worked by building out using a pretrained roberta-base model which then used and existing kaggle dataset containing real news and fake news from the period of 2015 to 2017. 
 
+## Features:
+- News Article Classification
+- Text Preprocessing Pipeline
+- Model Training + Evaluation
+- Explainability Tools
+- Dataset Integration
+
+## Results
+
 When we eventually ran our first NLP model we received the following results:
 - eval_loss: 0.0125
 - eval_accuracy: 0.9986
@@ -49,10 +58,6 @@ This is the dataset we used to build out all which we have done:
 
 https://www.kaggle.com/datasets/emineyetm/fake-news-detection-datasets
 
-# Features:
-- News Article Classification
-- Text Preprocessing Pipeline
-- Model Training + Evaluation
-- Explainability Tools
-- Dataset Integration
+## Key Notes:
+Kavin had issues pushing code to github so almost all pushes were done by Hayden. However, work was still down equally between the two of us.
 
