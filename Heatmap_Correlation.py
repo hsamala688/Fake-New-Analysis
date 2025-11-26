@@ -16,9 +16,11 @@ df = pd.concat([fake_news_df, real_news_df], ignore_index=True)
 #Combining of the two datasets together to prep for the making of the correlation map
 
 df['Word_Count'] = df['text'].apply(lambda x: len(str(x).split())) 
-'''This creates a new column based from the original text column and then using the .apply we use lambda x to make
+'''
+This creates a new column based from the original text column and then using the .apply we use lambda x to make
 sure that it is applied to every row in that column and then we count how many words are in that text string and using the 
-split function add white space between every word'''
+split function add white space between every word
+'''
 
 df['Subjectivity'] = df['text'].apply(lambda x: TextBlob(str(x)).sentiment.subjectivity)
 '''
@@ -95,3 +97,5 @@ plt.show()
 Essentially plotting of the heatmap correlation using seaborn and matplotlib
 And we have succesfully created our heatmap correlation for our fake and real news datasets
 '''
+
+#Codebase and comments done by Hayden
