@@ -319,9 +319,10 @@ for key, value in evaluation_results.items():
 #eval_runtime: 97.5257
 #eval_samples_per_second: 45.3930
 #eval_steps_per_second: 5.6810
-#epoch: 3.0000
+#epoch: 10.0000
 
 #Second round of Training
+#After patching and adding more robust data cleaning
 #eval_loss: 0.0259
 #eval_accuracy: 0.9964
 #eval_f1_score: 0.9963
@@ -330,7 +331,7 @@ for key, value in evaluation_results.items():
 #eval_runtime: 92.2295
 #eval_samples_per_second: 48.0000
 #eval_steps_per_second: 6.0070
-#epoch: 3.0000
+#epoch: 10.0000
 
 #Third round of Training
 #Using Google Colab and setting Epoch to 3
